@@ -1,9 +1,33 @@
 // ❗ You don't need to add extra action creators to achieve MVP
-export function moveClockwise() { }
+const MOVE_CLOCKWISE = 'MOVE_CLOCKWISE'
+const MOVE_COUNTER_CLOCKWISE = 'MOVE__COUNTER_CLOCKWISE'
+const SELECT_ANSWER = 'SELECT_ANSWER'
+const SET_MESSAGE = 'SET_MESSAGE'
+const SET_QUIZ = 'SET_QUIZ'
+const INPUT_CHANGE = 'INPUT_CHANGE'
+const RESET_FORM = 'RESET_FORM'
+const FETCH_QUIZ = 'FETCH_QUIZ'
+const POST_ANSWER = 'FETCH_QUIZ'
+const POST_QUIZ = 'FETCH_QUIZ'
 
-export function moveCounterClockwise() { }
 
-export function selectAnswer() { }
+
+export function moveClockwise() { 
+  return {
+    type: type.MOVE_CLOCKWISE,}
+ }
+
+export function moveCounterClockwise() { 
+  return {
+    type: type.MOVE_COUNTER_CLOCKWISE,
+  }
+ }
+
+export function selectAnswer() { 
+  return{
+    type: SELECT_ANSWER
+  }
+ }
 
 export function setMessage() { }
 
