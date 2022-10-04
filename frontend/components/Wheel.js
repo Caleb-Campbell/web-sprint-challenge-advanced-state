@@ -22,6 +22,8 @@ export function Wheel(props) {
   )
 }
 
+const mapStateToProps =(state) => {
+  return state
+}
 
-
-export default connect(st => st, actions)(Wheel)
+export default connect(mapStateToProps, actions)(Wheel)
