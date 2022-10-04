@@ -1,24 +1,9 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
-import { moveClockwise, moveCounterClocksise } from '../state/action-creators'
-import * as actionCreators from '../state/action-creators'
+import * as actions from '../state/action-creators'
 
 
 export function Wheel(props) {
-    
-
-  useEffect(() => {
-      console.log('Wheel Rendered')
-    },[])
-
-  // const handleClickRight = () => {
-  //   props.moveClockwise()
-  // }
-
-  // const handleClickLeft = () => {
-  //   props.moveCounterClockwise()
-  // }
-
   return (
     <div id="wrapper">
       <div id="wheel">
@@ -39,4 +24,4 @@ export function Wheel(props) {
 
 
 
-export default connect(st => st, actionCreators)(Wheel)
+export default connect(st => st, actions)(Wheel)
